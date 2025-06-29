@@ -86,7 +86,8 @@ chain = (
 print("Generated query variations:")
 
 # Get and print the generated query variations
-user_question = "what is the document about?"
+#user_question = "what is the document about?"
+user_question = "who has signed this document on behalf of tesla and what is that person's position?"
 # Construct a proper callback manager
 run_manager = CallbackManagerForRetrieverRun.get_noop_manager()
 variations = retriever.generate_queries(user_question, run_manager=run_manager)
